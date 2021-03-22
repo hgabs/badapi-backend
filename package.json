@@ -1,5 +1,5 @@
 {
-  "name": "okapi-backend",
+  "name": "badapi-backend",
   "version": "1.0.0",
   "main": "app.js",
   "license": "MIT",
@@ -15,7 +15,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "NODE_ENV='development' nodemon app.js",
-    "build:ui": "rm -rf public && cd ../frontend && yarn build && cp -r build ../backend/public",
+    "build:ui": "rm -rf public && cd ../badapi-frontend && yarn build && cp -r build ../badapi-backend/public",
     "deploy": "git add . && git commit -m \"build:ui - $(date -u)\" && git push azure"
   }
 }
