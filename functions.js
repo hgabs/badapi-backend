@@ -166,7 +166,7 @@ const harvestData = async () => {
   } catch (err) {
     console.log('Error harvesting data:', err);
   } finally {
-    return new Promise(resolve => setTimeout(() => resolve(harvestData(app)), harvestInterval));
+    return new Promise(resolve => setTimeout(() => resolve(harvestData()), harvestInterval));
   }
 }
 
